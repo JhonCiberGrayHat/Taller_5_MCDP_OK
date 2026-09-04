@@ -71,8 +71,9 @@ FASE 4:
 
 Test rojo: 
 
-Se modifica el condicional de stock actual para generar el error de codigo, se corre el pytest:
-![alt text](image-1.png)
+Se modifica el condicional de VENTAS DIARIAS cambiando el < por un > para generar el error de codigo (división por ceo), se corre el pytest:
+![alt text](image-4.png)
+
 
 tambien se lanza el commit con el codigo erroneo con el siguiente resultado el github: 
 ![alt text](image-2.png)
@@ -82,9 +83,9 @@ Lint rojo:
 Se importa a proposito la libreria pandas en inventario.py y se lanza el commit: 
 ![alt text](image-3.png)
 
+Finalmente se arregla el codigo para que funcione y se lanza commir
 
-
-
+![alt text](image-5.png)
 
 
 
