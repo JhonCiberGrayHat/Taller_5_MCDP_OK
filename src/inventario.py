@@ -6,7 +6,7 @@ def dias_de_inventario(stock_actual: int, ventas_diarias: float) -> float:
 
     Si no hay ventas, el stock dura 'infinito' (devolvemos -1 como señal).
     """
-    if stock_actual < 0:
+    if stock_actual < a:
         raise ValueError("stock_actual no puede ser negativo")
     if ventas_diarias < 0:
         raise ValueError("ventas_diarias no puede ser negativo")
