@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      # 1. tramos el codigo del repo a la maquina
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      # 2. Se instala Phyton
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.14'
+
+      # 3. Instalamos las dependencias
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # 4. verifiación del estilo 
+      - name: Lint con ruff
+        run: ruff check .
+
+      # 5. corremos las pruebas
+      - name: Correr tests
+        run: pytest
