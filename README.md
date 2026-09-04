@@ -1,5 +1,12 @@
 # Taller Semana 5 — El pipeline que nunca se escribió 🤖
 
+## Ejecutado por
+
+- Wilson Fernando Chacón
+- Jason Contreras
+- Jhon Henry Camacho
+
+
 **Empieza leyendo [`ENUNCIADO_TALLER.md`](ENUNCIADO_TALLER.md).**
 
 ## Qué hay aquí
@@ -29,3 +36,16 @@ pytest                           # 5 passed
 3. Súbelo a GitHub y velo ponerse verde en la pestaña Actions.
 4. Rómpelo a propósito (un test y un lint) para ver el rojo, y arréglalo.
 5. Documenta con capturas y trabaja con ≥5 commits.
+
+
+## DESARROLLO DEL TALLER
+
+FASE 1: CORRIENDO LOCAL
+
+Se intala el entorno local y los requerimientos, posteriormente se corre RUFF CHECK y se comprueba que el mensaje es: All checks passed!
+tambie nse corre el pytest y se comprueba que pasaron los 5 test satisfactoriamente.
+
+FASE 2: 
+
+Se crean las carpetas y archivo .yml  
+
