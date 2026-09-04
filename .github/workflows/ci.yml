@@ -27,6 +27,6 @@ jobs:
       - name: Lint con ruff
         run: ruff check .
 
-      # 5. corremos las pruebas
+      # 5. corremos las pruebas de pytets
       - name: Correr tests
         run: pytest
