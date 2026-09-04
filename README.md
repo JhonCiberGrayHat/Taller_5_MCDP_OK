@@ -47,5 +47,15 @@ tambie nse corre el pytest y se comprueba que pasaron los 5 test satisfactoriame
 
 FASE 2: 
 
-Se crean las carpetas y archivo .yml  
+Se crean las carpetas y archivo .github/workflows/ci.yml, se escribe el codigo teniendo en cuenta las recomendaciones:      - Dispararse en cada `push` y cada `pull_request`.
+                    - Correr en `ubuntu-latest`.
+
+FASE 3: 
+
+Se verifica que el codigo corre en verde, en el github: 
+
+![alt text](image.png)
+
+FASE 4: 
+
 
