@@ -58,4 +58,22 @@ Se verifica que el codigo corre en verde, en el github:
 
 FASE 4: 
 
+Test rojo: 
+
+Se modifica el condicional de stock actual para generar el error de codigo, se corre el pytest:
+![alt text](image-1.png)
+
+tambien se lanza el commit con el codigo erroneo con el siguiente resultado el github: 
+![alt text](image-2.png)
+
+Lint rojo:
+
+Se importa a proposito la libreria pandas en inventario.py y se lanza el commit: 
+![alt text](image-3.png)
+
+
+
+
+
+
 
