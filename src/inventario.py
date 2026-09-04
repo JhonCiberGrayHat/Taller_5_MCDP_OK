@@ -1,12 +1,12 @@
 """Cálculo de reposición de inventario para una cadena de tiendas."""
-
+import pandas as pd
 
 def dias_de_inventario(stock_actual: int, ventas_diarias: float) -> float:
     """Cuántos días durará el stock al ritmo de ventas actual.
 
     Si no hay ventas, el stock dura 'infinito' (devolvemos -1 como señal).
     """
-    if stock_actual < a:
+    if stock_actual < 0:
         raise ValueError("stock_actual no puede ser negativo")
     if ventas_diarias < 0:
         raise ValueError("ventas_diarias no puede ser negativo")
