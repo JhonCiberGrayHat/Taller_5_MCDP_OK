@@ -1,0 +1,25 @@
+name: CI
+
+# CORRE CON CADA PUSH Y CADA PULL REQUEST
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. tramos el codigo del repo a la maquina
+      - uses: actions/checkout@v4
+
+      # 2. Se instala Phyton
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Instalamos las dependencias
+      - run: pip install -requirements.txt
+
+      # 4. verifiación del estilo 
+      - run: ruff check .
+
+      # 5. corremos las pruebas
+      - run: pytest 
