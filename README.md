@@ -43,12 +43,23 @@ pytest                           # 5 passed
 FASE 1: CORRIENDO LOCAL
 
 Se intala el entorno local y los requerimientos, posteriormente se corre RUFF CHECK y se comprueba que el mensaje es: All checks passed!
-tambie nse corre el pytest y se comprueba que pasaron los 5 test satisfactoriamente.
+tambien se corre el pytest y se comprueba que pasaron los 5 test satisfactoriamente.
 
 FASE 2: 
 
 Se crean las carpetas y archivo .github/workflows/ci.yml, se escribe el codigo teniendo en cuenta las recomendaciones:      - Dispararse en cada `push` y cada `pull_request`.
                     - Correr en `ubuntu-latest`.
+
+QUE HACE MI workflow:
+
+    1. se Dispara en cada `push` y cada `pull_request`.
+    2. Corre en `ubuntu-latest`.
+    3. Trae el código (checkout) a la maquina.
+    4. Instala  Python 
+    5. Instala las dependencias (requirements.txt).
+    6. Corre el linter (ruff) para verificar codigo innecesario como librerias o variables no usadas.
+    7. Corre las pruebas (pytest) para detectar errores de logica de codigo.
+
 
 FASE 3: 
 
